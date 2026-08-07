@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work | Bathroom Remodel Portfolio — Andrey's Construction Fresno CA</title>
+  <meta name="description" content="See our bathroom remodel portfolio. Real projects from Fresno and Clovis homeowners — showers, tile, vanities, full gut remodels. (559) 360-4128.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.andreyhandyman.com/our-work.html">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/images/logo/favicon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .gallery-filters { display:flex; gap:12px; justify-content:center; margin-bottom:48px; flex-wrap:wrap; }
+    .gallery-filter-btn { padding:10px 24px; border:1.5px solid var(--border); background:var(--white); border-radius:var(--radius-sm); font-family:var(--font-sans); font-size:0.85rem; font-weight:600; color:var(--charcoal-lt); cursor:pointer; transition:all 0.2s; letter-spacing:0.04em; }
+    .gallery-filter-btn:hover { border-color:var(--gold); color:var(--charcoal); }
+    .gallery-filter-btn.active { background:var(--gold); border-color:var(--gold); color:var(--white); }
+    .full-gallery { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; }
+    .gallery-full-item { position:relative; overflow:hidden; border-radius:var(--radius-sm); background:var(--charcoal-lt); aspect-ratio:4/3; cursor:pointer; }
+    .gallery-full-item img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s; }
+    .gallery-full-item:hover img { transform:scale(1.05); }
+    .gallery-full-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent,rgba(30,30,30,0.75)); padding:20px 16px 16px; color:var(--white); transform:translateY(100%); transition:transform 0.3s; }
+    .gallery-full-item:hover .gallery-full-overlay { transform:translateY(0); }
+    .gallery-full-overlay h4 { font-size:0.95rem; margin-bottom:4px; }
+    .gallery-full-overlay p { font-size:0.8rem; opacity:0.8; }
+    @media(max-width:768px){ .full-gallery{grid-template-columns:1fr 1fr;} }
+    @media(max-width:480px){ .full-gallery{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Andrey's Construction home">
+        <img src="/images/logo/logo-light.svg" alt="Andrey's Construction &amp; Remodeling Inc." width="220" height="60" style="height:48px;width:auto;display:block;">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/bathroom-remodel-fresno.html">Bathroom Remodels</a></li>
+        <li><a href="/our-work.html" class="active">Our Work</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <a href="tel:5593604128" class="btn btn-primary nav-cta">(559) 360-4128</a>
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-nav">
+  <a href="/">Home</a><a href="/bathroom-remodel-fresno.html">Bathroom Remodels</a><a href="/our-work.html">Our Work</a><a href="/service-areas.html">Service Areas</a><a href="/about.html">About</a><a href="/blog.html">Blog</a><a href="/contact.html">Contact</a>
+  <a href="tel:5593604128" class="btn btn-primary">(559) 360-4128</a>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> › <span>Our Work</span></nav>
+      <h1>Our Work</h1>
+      <p>500+ bathroom remodels, renovations, and home improvement projects across Fresno, Clovis, and the Central Valley. Every photo is a real client's home.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="gallery-filters">
+      <button class="gallery-filter-btn active" data-filter="all">All Projects</button>
+      <button class="gallery-filter-btn" data-filter="bathroom">Bathrooms</button>
+      <button class="gallery-filter-btn" data-filter="shower">Showers</button>
+      <button class="gallery-filter-btn" data-filter="tile">Tile Work</button>
+      <button class="gallery-filter-btn" data-filter="kitchen">Kitchens</button>
+    </div>
+
+    <!-- ⚑ ALL IMAGES BELOW ARE PLACEHOLDERS — replace with real project photos from GMB -->
+    <!-- To replace: swap each src URL with your image filename, e.g. src="images/project-bathroom-fresno-01.jpg" -->
+    <!-- Keep the alt text pattern: [project type] [location] — [brief description] -->
+    <div class="full-gallery">
+      <div class="gallery-full-item gallery-filterable" data-cat="bathroom">
+        <img src="images/bathroom-reno-3.jpg" alt="Completed bathroom remodel Fresno CA - freestanding tub and large format tile" loading="lazy" width="800" height="600">
+        <div class="gallery-full-overlay"><h4>Master Bathroom Remodel</h4><p>Fresno, CA — Full Gut & Rebuild</p></div>
+      </div>
+      <div class="gallery-full-item gallery-filterable" data-cat="shower">
+        <img src="images/bathroom-reno-2.jpg" alt="Andrey working on shower remodel in Fresno CA - waterproofing board installation" loading="lazy" width="800" height="600">
+        <div class="gallery-full-overlay"><h4>Walk-In Shower Conversion</h4><p>Fresno, CA — Tub Removal & Custom Tile</p></div>
+      </div>
+      <div class="gallery-full-item gallery-filterable" data-cat="tile">
+        <img src="images/bathroom-reno-4.jpg" alt="Modern bathroom remodel Fresno CA with glass shower enclosure and dark tile flooring" loading="lazy" width="800" height="600">
+        <div class="gallery-full-overlay"><h4>Custom Tile Installation</h4><p>Clovis, CA — Porcelain Floor & Shower Walls</p></div>
+      </div>
+      <div class="gallery-full-item gallery-filterable" data-cat="bathroom">
+        <img src="images/toilet-install.jpg" alt="Wall-hung toilet and frameless glass shower installation by Andrey's Construction Fresno" loading="lazy" width="800" height="600">
+        <div class="gallery-full-overlay"><h4>Vanity & Fixture Update</h4><p>Fresno, CA — New Double Vanity & Lighting</p></div>
+      </div>
+      <div class="gallery-full-item gallery-filterable" data-cat="shower">
+        <img src="images/bathroom-reno-1.jpg" alt="Bathroom remodel Fresno CA - marble large format tile shower installation" loading="lazy" width="800" height="600">
+        <div class="gallery-full-overlay"><h4>Frameless Glass Shower</h4><p>Clovis, CA — Full Shower Enclosure</p></div>
+      </div>
+      <div class="gallery-full-item gallery-filterable" data-cat="kitchen">
+        <img src="images/kitchen-cabinets.jpg" alt="Kitchen cabinet and countertop remodel in Fresno CA by Andrey's Construction" loading="lazy" width="800" height="600">
+        <div class="gallery-full-overlay"><h4>Kitchen Remodel</h4><p>Fresno, CA — Cabinets, Countertops & Fixtures</p></div>
+      </div>
+      <div class="gallery-full-item gallery-filterable" data-cat="bathroom">
+        <img src="images/bathroom-demo.jpg" alt="Bathroom gut demo in Fresno CA showing water damage discovered during remodel" loading="lazy" width="800" height="600">
+        <div class="gallery-full-overlay"><h4>Hall Bathroom Remodel</h4><p>Fresno, CA — Small Bath Transformation</p></div>
+      </div>
+      <div class="gallery-full-item gallery-filterable" data-cat="tile">
+        <img src="images/fireplace-reno.jpg" alt="Fireplace renovation and mantel installation in Fresno CA home" loading="lazy" width="800" height="600">
+        <div class="gallery-full-overlay"><h4>Natural Stone Tile</h4><p>Fresno, CA — Marble Shower Surround</p></div>
+      </div>
+      <div class="gallery-full-item gallery-filterable" data-cat="bathroom">
+        <img src="images/water-filter-install.jpg" alt="Guest bathroom remodel Clovis CA with modern tile and new toilet" loading="lazy" width="800" height="600">
+        <div class="gallery-full-overlay"><h4>Guest Bathroom</h4><p>Clovis, CA — Modern Tile & Fixtures</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <h2>Like What You See?</h2>
+    <p>Let's talk about your bathroom. Free on-site estimate, no obligation.</p>
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+      <a href="/contact.html" class="btn btn-dark">Get a Free Estimate</a>
+      <a href="tel:5593604128" class="btn btn-secondary">(559) 360-4128</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/images/logo/logo-dark.svg" alt="Andrey's Construction &amp; Remodeling Inc." width="220" height="60" style="height:54px;width:auto;margin-bottom:16px;display:block;"><p>Expert bathroom remodeling in Fresno and Clovis, CA since 2004.</p></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="/bathroom-remodel-fresno.html">Bathroom Remodels</a></li><li><a href="/bathroom-remodel-fresno.html#shower">Shower Replacement</a></li><li><a href="/bathroom-remodel-fresno.html#tile">Tile & Flooring</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="/about.html">About Andrey</a></li><li><a href="/our-work.html">Our Work</a></li><li><a href="/service-areas.html">Service Areas</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><p class="footer-contact-item"><a href="tel:5593604128">(559) 360-4128</a></p><p class="footer-contact-item">Fresno, CA 93722</p><p class="footer-contact-item">Mon–Fri 8am–6pm · Sat 8am–4pm</p></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Andrey's Construction & Remodeling Inc. · Fresno, CA</span>
+      <span>Site by <a href="https://meshupstudio.com" target="_blank" rel="noopener noreferrer">Meshup Studio</a></span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
