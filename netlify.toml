@@ -1,0 +1,76 @@
+[[redirects]]
+  from = "/bathroom"
+  to = "/bathroom-remodel-fresno.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bathroom-remodels"
+  to = "/bathroom-remodel-fresno.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ourwork"
+  to = "/our-work.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/balcony"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/homeoffice"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kitchen"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/outdoors"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/andrey-handyman"
+  to = "/about.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/revamp-your-home-fresno-bathroom-remodel-ideas"
+  to = "/blog/bathroom-remodel-cost-fresno.html"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
