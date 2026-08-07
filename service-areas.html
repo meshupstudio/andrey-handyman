@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Areas | Bathroom Remodeling Fresno, Clovis & Central Valley CA</title>
+  <meta name="description" content="Andrey's Construction & Remodeling serves Fresno, Clovis, Sanger, Madera, Reedley, Selma, Kerman and surrounding Central Valley communities. Free on-site estimates. (559) 360-4128.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.andreyhandyman.com/service-areas.html">
+  <meta property="og:title" content="Service Areas | Bathroom Remodeling Across the Central Valley">
+  <meta property="og:description" content="Andrey's Construction serves Fresno, Clovis, Sanger, Madera, Reedley, Selma, Kerman and surrounding areas. Free estimates. (559) 360-4128.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.andreyhandyman.com/service-areas.html">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/images/logo/favicon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 56px;
+    }
+    .area-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .area-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .area-card-header {
+      background: var(--tile);
+      padding: 20px 24px;
+      position: relative;
+    }
+    .area-card-header.primary { background: var(--charcoal); }
+    .area-card-header h3 {
+      color: var(--white);
+      font-size: 1.2rem;
+      margin-bottom: 2px;
+    }
+    .area-card-header .area-sub {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      font-family: var(--font-sans);
+    }
+    .area-card-header .area-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--gold);
+      color: var(--white);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-family: var(--font-sans);
+    }
+    .area-card-body { padding: 24px; }
+    .area-card-body p {
+      font-size: 0.92rem;
+      color: var(--charcoal-md);
+      margin-bottom: 16px;
+      line-height: 1.75;
+    }
+    .area-services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+    .area-service-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--tile);
+      background: var(--cream-dark);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-family: var(--font-sans);
+    }
+    .area-card-footer {
+      padding: 0 24px 24px;
+    }
+    .area-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gold);
+      font-family: var(--font-sans);
+      transition: gap 0.2s;
+    }
+    .area-link:hover { gap: 10px; }
+
+    /* Map section */
+    .map-section { background: var(--cream-dark); padding: 80px 0; }
+    .map-content { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .map-embed-lg { width: 100%; height: 440px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); }
+    .map-embed-lg iframe { width: 100%; height: 100%; border: none; }
+    .coverage-list { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+    .coverage-item { display: flex; align-items: center; gap: 12px; font-size: 0.95rem; color: var(--charcoal-md); font-family: var(--font-sans); }
+    .coverage-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+
+    /* FAQ */
+    .faq-simple { max-width: 760px; margin: 0 auto; }
+    .faq-simple .faq-item { border-bottom: 1px solid var(--border); padding: 24px 0; }
+    .faq-simple .faq-item h3 { font-size: 1.05rem; color: var(--charcoal); margin-bottom: 10px; }
+    .faq-simple .faq-item p { font-size: 0.95rem; margin-bottom: 0; }
+
+    @media (max-width: 1024px) {
+      .areas-grid { grid-template-columns: repeat(2, 1fr); }
+      .map-content { grid-template-columns: 1fr; }
+      .map-embed-lg { height: 320px; }
+    }
+    @media (max-width: 640px) {
+      .areas-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "@id": "https://www.andreyhandyman.com/#business",
+    "name": "Andrey's Construction & Remodeling Inc.",
+    "url": "https://www.andreyhandyman.com/",
+    "telephone": "+15593604128",
+    "email": "andreyhandyman@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Fresno",
+      "addressRegion": "CA",
+      "postalCode": "93722",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Fresno", "sameAs": "https://en.wikipedia.org/wiki/Fresno,_California" },
+      { "@type": "City", "name": "Clovis", "sameAs": "https://en.wikipedia.org/wiki/Clovis,_California" },
+      { "@type": "City", "name": "Sanger", "sameAs": "https://en.wikipedia.org/wiki/Sanger,_California" },
+      { "@type": "City", "name": "Madera", "sameAs": "https://en.wikipedia.org/wiki/Madera,_California" },
+      { "@type": "City", "name": "Reedley", "sameAs": "https://en.wikipedia.org/wiki/Reedley,_California" },
+      { "@type": "City", "name": "Selma", "sameAs": "https://en.wikipedia.org/wiki/Selma,_California" },
+      { "@type": "City", "name": "Kerman", "sameAs": "https://en.wikipedia.org/wiki/Kerman,_California" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Bathroom Remodeling Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bathroom Remodel" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Shower & Tub Replacement" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tile & Flooring Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vanity & Fixture Updates" } }
+      ]
+    },
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "16:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Andrey's Construction home">
+        <img src="/images/logo/logo-light.svg" alt="Andrey's Construction &amp; Remodeling Inc." width="220" height="60" style="height:48px;width:auto;display:block;">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/bathroom-remodel-fresno.html">Bathroom Remodels</a></li>
+        <li><a href="/our-work.html">Our Work</a></li>
+        <li><a href="/service-areas.html">Service Areas</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/service-areas.html" class="active">Service Areas</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <a href="tel:5593604128" class="btn btn-primary nav-cta">(559) 360-4128</a>
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-nav">
+  <a href="/">Home</a>
+  <a href="/bathroom-remodel-fresno.html">Bathroom Remodels</a>
+  <a href="/our-work.html">Our Work</a>
+  <a href="/about.html">About</a>
+  <a href="/service-areas.html">Service Areas</a>
+  <a href="/blog.html">Blog</a>
+  <a href="/contact.html">Contact</a>
+  <a href="tel:5593604128" class="btn btn-primary">(559) 360-4128</a>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> › <span>Service Areas</span>
+      </nav>
+      <h1>Serving Fresno, Clovis &amp; the Central Valley</h1>
+      <p>Andrey's Construction & Remodeling provides expert bathroom remodeling across Fresno County and surrounding communities. Free on-site estimates throughout our service area.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS GRID -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Where We Work</span>
+      <h2>Our Service Area</h2>
+      <p>We travel throughout the Central Valley to serve homeowners who want quality remodeling work done right. No extra travel fees within our standard service area.</p>
+    </div>
+
+    <div class="areas-grid">
+
+      <!-- Fresno -->
+      <div class="area-card">
+        <div class="area-card-header primary">
+          <div class="area-badge">Primary</div>
+          <h3>Fresno</h3>
+          <div class="area-sub">Fresno County, CA</div>
+        </div>
+        <div class="area-card-body">
+          <p>Fresno is our home base and where the majority of our bathroom remodel projects are completed. From Tower District bungalows to newer construction in Fig Garden and northwest Fresno, we know the housing stock in this city inside and out.</p>
+          <p>Fresno homes built before the 1980s often have tile work and plumbing that's well past its lifespan — and water damage hidden behind the walls. We've seen it all and know how to address it properly.</p>
+          <div class="area-services">
+            <span class="area-service-tag">Full Gut Remodels</span>
+            <span class="area-service-tag">Shower Conversions</span>
+            <span class="area-service-tag">Tile & Flooring</span>
+            <span class="area-service-tag">Vanity Updates</span>
+            <span class="area-service-tag">Plumbing</span>
+          </div>
+        </div>
+        <div class="area-card-footer">
+          <a href="/bathroom-remodel-fresno.html" class="area-link">See Fresno services →</a>
+        </div>
+      </div>
+
+      <!-- Clovis -->
+      <div class="area-card">
+        <div class="area-card-header">
+          <div class="area-badge">Top Area</div>
+          <h3>Clovis</h3>
+          <div class="area-sub">Fresno County, CA</div>
+        </div>
+        <div class="area-card-body">
+          <p>Clovis is one of our most active service areas. Homeowners here tend to invest seriously in their properties — master bath remodels with freestanding tubs, large-format tile, and custom walk-in showers are common requests we love to take on.</p>
+          <p>Clovis's newer housing developments also mean larger bathrooms with more potential for high-end finishes. We work throughout Old Town Clovis, Harlan Ranch, and Loma Vista.</p>
+          <div class="area-services">
+            <span class="area-service-tag">Master Bath Remodels</span>
+            <span class="area-service-tag">Walk-In Showers</span>
+            <span class="area-service-tag">Large Format Tile</span>
+            <span class="area-service-tag">Freestanding Tubs</span>
+          </div>
+        </div>
+        <div class="area-card-footer">
+          <a href="/contact.html" class="area-link">Get a Clovis estimate →</a>
+        </div>
+      </div>
+
+      <!-- Sanger -->
+      <div class="area-card">
+        <div class="area-card-header">
+          <h3>Sanger</h3>
+          <div class="area-sub">Fresno County, CA</div>
+        </div>
+        <div class="area-card-body">
+          <p>We regularly serve Sanger homeowners for bathroom remodels, tile work, and plumbing upgrades. Sanger has a strong community of longtime homeowners who take pride in maintaining and updating their properties.</p>
+          <p>Many Sanger homes are mid-century construction with original tile and fixtures that are ready for a modern update. We handle the full project — demo through final walkthrough.</p>
+          <div class="area-services">
+            <span class="area-service-tag">Bathroom Remodels</span>
+            <span class="area-service-tag">Tile Replacement</span>
+            <span class="area-service-tag">Fixture Updates</span>
+            <span class="area-service-tag">Plumbing</span>
+          </div>
+        </div>
+        <div class="area-card-footer">
+          <a href="/contact.html" class="area-link">Get a Sanger estimate →</a>
+        </div>
+      </div>
+
+      <!-- Madera -->
+      <div class="area-card">
+        <div class="area-card-header">
+          <h3>Madera</h3>
+          <div class="area-sub">Madera County, CA</div>
+        </div>
+        <div class="area-card-body">
+          <p>Madera is within our standard service area and we complete bathroom remodel projects there regularly. The city has seen significant residential growth, and we work in both established neighborhoods and newer developments.</p>
+          <p>Whether you're updating a dated guest bath or doing a full master suite transformation, we bring the same standard of work to every Madera project.</p>
+          <div class="area-services">
+            <span class="area-service-tag">Bathroom Remodels</span>
+            <span class="area-service-tag">Shower & Tub Work</span>
+            <span class="area-service-tag">Tile Installation</span>
+            <span class="area-service-tag">Vanity Updates</span>
+          </div>
+        </div>
+        <div class="area-card-footer">
+          <a href="/contact.html" class="area-link">Get a Madera estimate →</a>
+        </div>
+      </div>
+
+      <!-- Reedley -->
+      <div class="area-card">
+        <div class="area-card-header">
+          <h3>Reedley</h3>
+          <div class="area-sub">Fresno County, CA</div>
+        </div>
+        <div class="area-card-body">
+          <p>Known as the "World's Fruit Basket," Reedley is a tight-knit community where our work spreads largely through referrals. We've completed bathroom remodels and tile projects throughout Reedley's neighborhoods and are happy to provide references from local homeowners.</p>
+          <p>We cover the full scope of bathroom renovation work in Reedley — from simple tile refreshes to complete gut remodels.</p>
+          <div class="area-services">
+            <span class="area-service-tag">Full Remodels</span>
+            <span class="area-service-tag">Tile Work</span>
+            <span class="area-service-tag">Shower Updates</span>
+            <span class="area-service-tag">Plumbing</span>
+          </div>
+        </div>
+        <div class="area-card-footer">
+          <a href="/contact.html" class="area-link">Get a Reedley estimate →</a>
+        </div>
+      </div>
+
+      <!-- Selma -->
+      <div class="area-card">
+        <div class="area-card-header">
+          <h3>Selma</h3>
+          <div class="area-sub">Fresno County, CA</div>
+        </div>
+        <div class="area-card-body">
+          <p>Selma homeowners looking for a trusted local contractor for bathroom remodeling have been calling us for years. We're familiar with the housing in this area and provide the same quality of work here as we do in Fresno and Clovis.</p>
+          <p>Free on-site estimates in Selma — Andrey personally visits every home before quoting any project.</p>
+          <div class="area-services">
+            <span class="area-service-tag">Bathroom Remodels</span>
+            <span class="area-service-tag">Tile & Flooring</span>
+            <span class="area-service-tag">Fixture Updates</span>
+            <span class="area-service-tag">Vanities</span>
+          </div>
+        </div>
+        <div class="area-card-footer">
+          <a href="/contact.html" class="area-link">Get a Selma estimate →</a>
+        </div>
+      </div>
+
+      <!-- Kerman -->
+      <div class="area-card">
+        <div class="area-card-header">
+          <h3>Kerman</h3>
+          <div class="area-sub">Fresno County, CA</div>
+        </div>
+        <div class="area-card-body">
+          <p>Kerman is one of the faster-growing communities in Fresno County, with a mix of established homes and newer construction. We serve Kerman homeowners for bathroom remodels, tile work, plumbing upgrades, and general home renovation projects.</p>
+          <p>Not sure if you're in our service area? Give us a call — if we can get to you, we will.</p>
+          <div class="area-services">
+            <span class="area-service-tag">Bathroom Remodels</span>
+            <span class="area-service-tag">Tile Work</span>
+            <span class="area-service-tag">Plumbing</span>
+            <span class="area-service-tag">Home Renovation</span>
+          </div>
+        </div>
+        <div class="area-card-footer">
+          <a href="/contact.html" class="area-link">Get a Kerman estimate →</a>
+        </div>
+      </div>
+
+      <!-- Fowler -->
+      <div class="area-card">
+        <div class="area-card-header">
+          <h3>Fowler</h3>
+          <div class="area-sub">Fresno County, CA</div>
+        </div>
+        <div class="area-card-body">
+          <p>Fowler is a small but proud community in Fresno County and we're glad to serve homeowners here. We treat every project — whether it's a full bathroom gut remodel or a tile and fixture update — with the same care regardless of city size.</p>
+          <p>Free estimates in Fowler. We respond within 24 hours.</p>
+          <div class="area-services">
+            <span class="area-service-tag">Bathroom Remodels</span>
+            <span class="area-service-tag">Tile & Flooring</span>
+            <span class="area-service-tag">Fixture Updates</span>
+          </div>
+        </div>
+        <div class="area-card-footer">
+          <a href="/contact.html" class="area-link">Get a Fowler estimate →</a>
+        </div>
+      </div>
+
+      <!-- Not on the list? -->
+      <div class="area-card" style="background:var(--cream-dark);border-style:dashed;">
+        <div class="area-card-header" style="background:var(--gold);">
+          <h3>Somewhere Else?</h3>
+          <div class="area-sub">Central Valley, CA</div>
+        </div>
+        <div class="area-card-body">
+          <p>Don't see your city listed? We regularly travel throughout the Central Valley for the right project. If you're within a reasonable distance of Fresno, there's a good chance we can help.</p>
+          <p>Give us a call or fill out the estimate form and let us know where you're located. We'll let you know right away if we can make it work.</p>
+          <div class="area-services">
+            <span class="area-service-tag">Call to Confirm</span>
+            <span class="area-service-tag">Free Estimate</span>
+          </div>
+        </div>
+        <div class="area-card-footer">
+          <a href="/contact.html" class="area-link">Contact us →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP + COVERAGE LIST -->
+<section class="map-section">
+  <div class="container">
+    <div class="map-content">
+      <div>
+        <span class="eyebrow">Coverage Area</span>
+        <h2>Rooted in Fresno, Serving the Valley</h2>
+        <p style="margin-bottom:28px;">We've been showing up across the Central Valley for over 20 years. Our work travels with us — the same quality, the same attention to detail, the same personal oversight by Andrey on every job.</p>
+        <div class="coverage-list">
+          <div class="coverage-item"><div class="coverage-dot"></div>Fresno — Primary service area</div>
+          <div class="coverage-item"><div class="coverage-dot"></div>Clovis — Full service, regularly active</div>
+          <div class="coverage-item"><div class="coverage-dot"></div>Sanger — Full service</div>
+          <div class="coverage-item"><div class="coverage-dot"></div>Madera — Full service</div>
+          <div class="coverage-item"><div class="coverage-dot"></div>Reedley — Full service</div>
+          <div class="coverage-item"><div class="coverage-dot"></div>Selma — Full service</div>
+          <div class="coverage-item"><div class="coverage-dot"></div>Kerman — Full service</div>
+          <div class="coverage-item"><div class="coverage-dot"></div>Fowler — Full service</div>
+          <div class="coverage-item" style="color:var(--charcoal-lt);">
+            <div class="coverage-dot" style="background:var(--border);"></div>
+            Surrounding areas — Call to confirm
+          </div>
+        </div>
+        <a href="/contact.html" class="btn btn-primary" style="margin-top:32px;">Request Free Estimate</a>
+      </div>
+      <div class="map-embed-lg">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d404486.5!2d-119.9018!3d36.7378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945ced16a9f8af%3A0x9f36e4f2a16299cd!2sFresno%20County%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+          title="Andrey's Construction service area — Fresno County and Central Valley CA"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Common Questions</span>
+      <h2>Service Area FAQs</h2>
+    </div>
+    <div class="faq-simple">
+      <div class="faq-item">
+        <h3>Do you charge extra for travel outside Fresno?</h3>
+        <p>No travel fees for any city listed on this page. Clovis, Sanger, Madera, Reedley, Selma, Kerman, and Fowler are all within our standard service area. For locations further out, we'll let you know upfront if there's any additional cost — and it's usually a small flat fee, not an ongoing charge.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer free estimates in all service areas?</h3>
+        <p>Yes — free on-site estimates throughout our entire service area. Andrey personally visits every home before quoting any project, regardless of city. We respond to all estimate requests within 24 hours.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How quickly can you start a project in Clovis or Sanger?</h3>
+        <p>Scheduling depends on our current workload, but we typically have availability within 2–4 weeks for new projects. We'll give you a clear start date in writing as part of your estimate — not a vague "sometime next month."</p>
+      </div>
+      <div class="faq-item">
+        <h3>Are you familiar with local building codes outside Fresno?</h3>
+        <p>Yes. We're familiar with building codes and permit requirements across Fresno County and neighboring jurisdictions. For permitted work — plumbing relocations, electrical upgrades — we handle the permit process for you in any city we serve.</p>
+      </div>
+      <div class="faq-item">
+        <h3>My city isn't listed — can you still help?</h3>
+        <p>Possibly. We regularly travel beyond our listed areas for the right project. Call us at <a href="tel:5593604128" style="color:var(--gold);font-weight:600;">(559) 360-4128</a> or fill out the estimate form with your location and we'll let you know right away.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <h2>Wherever You Are in the Valley — We'll Come to You</h2>
+    <p>Free on-site estimates across our entire service area. Andrey personally visits every home.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="/contact.html" class="btn btn-dark">Request Free Estimate</a>
+      <a href="tel:5593604128" class="btn btn-secondary">(559) 360-4128</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/images/logo/logo-dark.svg" alt="Andrey's Construction &amp; Remodeling Inc." width="220" height="60" style="height:54px;width:auto;margin-bottom:16px;display:block;">
+        <p>Expert bathroom remodeling across Fresno, Clovis, and the Central Valley since 2004.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/bathroom-remodel-fresno.html">Bathroom Remodels</a></li>
+          <li><a href="/bathroom-remodel-fresno.html#shower">Shower Replacement</a></li>
+          <li><a href="/bathroom-remodel-fresno.html#tile">Tile & Flooring</a></li>
+          <li><a href="/bathroom-remodel-fresno.html#vanity">Vanity Updates</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="/bathroom-remodel-fresno.html">Fresno</a></li>
+          <li><a href="/service-areas.html">Clovis</a></li>
+          <li><a href="/service-areas.html">Sanger</a></li>
+          <li><a href="/service-areas.html">Madera</a></li>
+          <li><a href="/service-areas.html">Reedley & More</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p class="footer-contact-item"><a href="tel:5593604128">(559) 360-4128</a></p>
+        <p class="footer-contact-item">Fresno, CA 93722</p>
+        <p class="footer-contact-item">Mon–Fri: 8am–6pm<br>Sat: 8am–4pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Andrey's Construction & Remodeling Inc. · Fresno, CA · Lic. #1020339</span>
+      <span>Site by <a href="https://meshupstudio.com" target="_blank" rel="noopener noreferrer">Meshup Studio</a></span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
