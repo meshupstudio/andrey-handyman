@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <g transform="translate(42,40) rotate(45)">
+    <rect x="-22" y="-22" width="13" height="13" rx="1.5" fill="#B8963E"/>
+    <rect x="-7"  y="-22" width="13" height="13" rx="1.5" fill="#D4AF5A"/>
+    <rect x="8"   y="-22" width="13" height="13" rx="1.5" fill="#B8963E" opacity="0.4"/>
+    <rect x="-22" y="-7"  width="13" height="13" rx="1.5" fill="#D4AF5A" opacity="0.55"/>
+    <rect x="-7"  y="-7"  width="13" height="13" rx="1.5" fill="#B8963E"/>
+    <rect x="8"   y="-7"  width="13" height="13" rx="1.5" fill="#D4AF5A"/>
+    <rect x="-22" y="8"   width="13" height="13" rx="1.5" fill="#B8963E" opacity="0.3"/>
+    <rect x="-7"  y="8"   width="13" height="13" rx="1.5" fill="#D4AF5A" opacity="0.6"/>
+    <rect x="8"   y="8"   width="13" height="13" rx="1.5" fill="#B8963E"/>
+  </g>
+  <text x="82" y="29" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#1E1E1E" letter-spacing="1">ANDREY&#39;S</text>
+  <line x1="82" y1="37" x2="308" y2="37" stroke="#B8963E" stroke-width="1"/>
+  <text x="82" y="54" font-family="Arial, sans-serif" font-size="8.5" font-weight="500" fill="#B8963E" letter-spacing="4">CONSTRUCTION &amp; REMODELING</text>
+</svg>
