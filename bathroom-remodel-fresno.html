@@ -17,6 +17,8 @@
   <link rel="apple-touch-icon" href="/images/logo/favicon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap"></noscript>
   <link rel="stylesheet" href="css/style.css">
   <style>
     .service-hero-img { width:100%; height:420px; object-fit:cover; border-radius:var(--radius-md); margin-bottom:48px; }
@@ -133,7 +135,7 @@
   <div class="container">
     <div class="nav-inner">
       <a href="/" class="nav-logo" aria-label="Andrey's Construction home">
-        <img src="/images/logo/logo-light.svg" alt="Andrey's Construction &amp; Remodeling Inc." width="220" height="60" style="height:48px;width:auto;display:block;">
+        <img src="/images/logo/logo-light.svg" alt="Andrey's Construction &amp; Remodeling Inc." width="220" height="60" width="220" height="48" style="height:48px;width:auto;display:block;">
       </a>
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
@@ -181,7 +183,7 @@
     <!-- ⚑ PLACEHOLDER — replace with real hero bathroom photo from GMB -->
     <img
       class="service-hero-img"
-      src="images/bathroom-reno-3.jpg"
+      src="images/bathroom-reno-3.webp"
       alt="Completed bathroom remodel in Fresno CA by Andrey's Construction - walk-in shower with custom tile"
       loading="eager"
       width="1140" height="420"
@@ -202,7 +204,7 @@
     <!-- SERVICES DETAIL -->
     <div id="shower" class="service-detail-grid">
       <!-- ⚑ PLACEHOLDER -->
-      <img src="images/bathroom-reno-2.jpg" alt="Walk-in shower installation Fresno CA with frameless glass and custom tile" loading="lazy" width="700" height="360">
+      <img src="images/bathroom-reno-2.webp" alt="Walk-in shower installation Fresno CA with frameless glass and custom tile" loading="lazy" width="700" height="360">
       <div class="service-detail-content">
         <span class="eyebrow">Service</span>
         <h3>Shower & Tub Replacement</h3>
@@ -231,12 +233,12 @@
         </ul>
       </div>
       <!-- ⚑ PLACEHOLDER -->
-      <img src="images/bathroom-reno-4.jpg" alt="Custom tile flooring installation in Fresno bathroom remodel" loading="lazy" width="700" height="360">
+      <img src="images/bathroom-reno-4.webp" alt="Custom tile flooring installation in Fresno bathroom remodel" loading="lazy" width="700" height="360">
     </div>
 
     <div id="vanity" class="service-detail-grid">
       <!-- ⚑ PLACEHOLDER -->
-      <img src="images/toilet-install.jpg" alt="Vanity and fixture update in Fresno CA bathroom renovation" loading="lazy" width="700" height="360">
+      <img src="images/toilet-install.webp" alt="Vanity and fixture update in Fresno CA bathroom renovation" loading="lazy" width="700" height="360">
       <div class="service-detail-content">
         <span class="eyebrow">Service</span>
         <h3>Vanity & Fixture Updates</h3>
@@ -265,7 +267,7 @@
         </ul>
       </div>
       <!-- ⚑ PLACEHOLDER -->
-      <img src="images/bathroom-reno-1.jpg" alt="Bathroom plumbing and electrical work during Fresno remodel" loading="lazy" width="700" height="360">
+      <img src="images/bathroom-reno-1.webp" alt="Bathroom plumbing and electrical work during Fresno remodel" loading="lazy" width="700" height="360">
     </div>
   </div>
 </section>
@@ -367,7 +369,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="/images/logo/logo-dark.svg" alt="Andrey's Construction &amp; Remodeling Inc." width="220" height="60" style="height:54px;width:auto;margin-bottom:16px;display:block;">
+        <img src="/images/logo/logo-dark.svg" alt="Andrey's Construction &amp; Remodeling Inc." width="220" height="60" width="220" height="54" style="height:54px;width:auto;margin-bottom:16px;display:block;">
         <p>Expert bathroom remodeling in Fresno and Clovis, CA. 20+ years of craftsmanship you can trust.</p>
       </div>
       <div class="footer-col">
@@ -403,6 +405,6 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
