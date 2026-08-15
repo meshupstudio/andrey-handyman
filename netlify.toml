@@ -1,18 +1,18 @@
 [[redirects]]
   from = "/bathroom"
-  to = "/bathroom-remodel-fresno.html"
+  to = "/bathroom-remodel-fresno"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bathroom-remodels"
-  to = "/bathroom-remodel-fresno.html"
+  to = "/bathroom-remodel-fresno"
   status = 301
   force = true
 
 [[redirects]]
   from = "/ourwork"
-  to = "/our-work.html"
+  to = "/our-work"
   status = 301
   force = true
 
@@ -42,16 +42,17 @@
 
 [[redirects]]
   from = "/andrey-handyman"
-  to = "/about.html"
+  to = "/about"
   status = 301
   force = true
 
 [[redirects]]
   from = "/revamp-your-home-fresno-bathroom-remodel-ideas"
-  to = "/blog/bathroom-remodel-cost-fresno.html"
+  to = "/blog/bathroom-remodel-cost-fresno"
   status = 301
   force = true
 
+# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -60,6 +61,7 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
+# Cache CSS and JS for 1 year (immutable)
 [[headers]]
   for = "/css/*"
   [headers.values]
@@ -70,7 +72,26 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Cache images for 30 days
 [[headers]]
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=2592000"
+
+# Cache WebP images aggressively
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# Cache fonts
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML — short cache so updates show quickly
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
