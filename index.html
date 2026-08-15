@@ -17,9 +17,12 @@
 
   <!-- Fonts & CSS -->
   <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preload" as="image" href="/images/bathroom-reno-3.webp" fetchpriority="high">
   <link rel="apple-touch-icon" href="/images/logo/favicon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap"></noscript>
   <link rel="stylesheet" href="css/style.css">
 
   <!-- LocalBusiness Schema -->
@@ -112,7 +115,7 @@
   <div class="container">
     <div class="nav-inner">
       <a href="/" class="nav-logo" aria-label="Andrey's Construction home">
-        <img src="/images/logo/logo-light.svg" alt="Andrey's Construction &amp; Remodeling Inc." width="220" height="60" style="height:48px;width:auto;display:block;">
+        <img src="/images/logo/logo-light.svg" alt="Andrey's Construction &amp; Remodeling Inc." width="220" height="60" width="220" height="48" style="height:48px;width:auto;display:block;">
       </a>
       <ul class="nav-links" role="list">
         <li><a href="/">Home</a></li>
@@ -205,7 +208,7 @@
   <div class="about-strip-img">
     <!-- ⚑ PLACEHOLDER — replace with real photo of Andrey working on a project -->
     <img
-      src="images/andrey-boginski.jpg"
+      src="images/andrey-boginski.webp"
       alt="Andrey Boginski working on a bathroom remodel in Fresno CA"
       loading="lazy"
       width="600" height="600"
@@ -330,23 +333,23 @@
     <div class="gallery-grid">
       <!-- ⚑ PLACEHOLDERS — replace ALL images with real project photos from GMB -->
       <div class="gallery-item">
-        <img src="images/bathroom-reno-3.jpg" alt="Full bathroom remodel Fresno CA - walk-in shower with tile work" loading="lazy" width="900" height="600">
+        <img src="images/bathroom-reno-3.webp" alt="Full bathroom remodel Fresno CA - walk-in shower with tile work" loading="lazy" width="900" height="600">
         <div class="gallery-overlay">Bathroom Remodel — Fresno</div>
       </div>
       <div class="gallery-item">
-        <img src="images/bathroom-reno-4.jpg" alt="Bathroom tile installation Fresno - custom porcelain floor tiles" loading="lazy" width="600" height="600">
+        <img src="images/bathroom-reno-4.webp" alt="Bathroom tile installation Fresno - custom porcelain floor tiles" loading="lazy" width="600" height="600">
         <div class="gallery-overlay">Modern Bathroom — Clovis</div>
       </div>
       <div class="gallery-item">
-        <img src="images/bathroom-reno-1.jpg" alt="Walk-in shower remodel Fresno CA with frameless glass enclosure" loading="lazy" width="600" height="600">
+        <img src="images/bathroom-reno-1.webp" alt="Walk-in shower remodel Fresno CA with frameless glass enclosure" loading="lazy" width="600" height="600">
         <div class="gallery-overlay">Shower Remodel — Fresno</div>
       </div>
       <div class="gallery-item">
-        <img src="images/toilet-install.jpg" alt="Vanity and fixture update in Clovis bathroom remodel" loading="lazy" width="600" height="600">
+        <img src="images/toilet-install.webp" alt="Vanity and fixture update in Clovis bathroom remodel" loading="lazy" width="600" height="600">
         <div class="gallery-overlay">Toilet Install — Fresno</div>
       </div>
       <div class="gallery-item">
-        <img src="images/bathroom-demo.jpg" alt="Bathroom gut remodel before and after in Fresno California" loading="lazy" width="600" height="600">
+        <img src="images/bathroom-demo.webp" alt="Bathroom gut remodel before and after in Fresno California" loading="lazy" width="600" height="600">
         <div class="gallery-overlay">Gut Demo — Fresno</div>
       </div>
     </div>
@@ -428,7 +431,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="/images/logo/logo-dark.svg" alt="Andrey's Construction &amp; Remodeling Inc." width="220" height="60" style="height:54px;width:auto;margin-bottom:16px;display:block;">
+        <img src="/images/logo/logo-dark.svg" alt="Andrey's Construction &amp; Remodeling Inc." width="220" height="60" width="220" height="54" style="height:54px;width:auto;margin-bottom:16px;display:block;">
         <p>Your trusted local expert for bathroom remodels and home renovations in Fresno and Clovis, CA. Exceptional craftsmanship since 2004.</p>
         <div class="footer-expertise">
           <img src="https://res.cloudinary.com/expertise-com/image/upload/remote_media/awards/ca_fresno_handyman_2025_inverse.svg" alt="Top Rated Fresno Handyman 2025 - Expertise.com" width="120" height="60">
@@ -473,6 +476,6 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
