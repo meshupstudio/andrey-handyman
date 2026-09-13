@@ -188,10 +188,14 @@ p { color: var(--charcoal-md); line-height: 1.75; }
 .nav-hamburger {
   display: none;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
+  width: 44px;
+  height: 44px;
   background: none;
   border: none;
-  padding: 4px;
+  padding: 0;
 }
 .nav-hamburger span {
   display: block;
@@ -532,6 +536,7 @@ p { color: var(--charcoal-md); line-height: 1.75; }
 .contact-detail-text a:hover { color: var(--gold); }
 
 /* FORM */
+.contact-form-col { min-width: 0; }
 .contact-form { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 48px; }
 .contact-form h3 { margin-bottom: 32px; font-size: 1.3rem; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
