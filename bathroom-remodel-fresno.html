@@ -6,12 +6,12 @@
   <title>Bathroom Remodel Fresno CA | Andrey's Construction & Remodeling</title>
   <meta name="description" content="Expert bathroom remodeling in Fresno & Clovis, CA. Shower replacement, tile, vanities, full gut remodels. 20+ years, 500+ projects. Free estimates. (559) 360-4128.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.andreyhandyman.com/bathroom-remodel-fresno.html">
+  <link rel="canonical" href="https://andreyhandyman.com/bathroom-remodel-fresno.html">
 
   <meta property="og:title" content="Bathroom Remodel Fresno CA | Andrey's Construction">
   <meta property="og:description" content="Expert bathroom remodeling in Fresno & Clovis, CA. Free on-site estimates. (559) 360-4128.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.andreyhandyman.com/bathroom-remodel-fresno.html">
+  <meta property="og:url" content="https://andreyhandyman.com/bathroom-remodel-fresno.html">
 
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/images/logo/favicon-192.png">
@@ -39,7 +39,9 @@
     .cost-table th { background:var(--tile); color:var(--white); padding:14px 20px; text-align:left; font-family:var(--font-sans); font-size:0.85rem; font-weight:600; letter-spacing:0.05em; }
     .cost-table td { padding:14px 20px; border-bottom:1px solid var(--border); font-size:0.95rem; }
     .cost-table tr:nth-child(even) td { background:var(--cream-dark); }
-    @media(max-width:768px){ .service-detail-grid{grid-template-columns:1fr;} .service-detail-grid:nth-child(even){direction:ltr;} .service-hero-img{height:260px;} }
+    .intro-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; margin-bottom:64px; }
+    .cost-table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    @media(max-width:768px){ .service-detail-grid{grid-template-columns:1fr;} .service-detail-grid:nth-child(even){direction:ltr;} .service-hero-img{height:260px;} .intro-grid{grid-template-columns:1fr; gap:32px; margin-bottom:48px;} }
   </style>
 
   <!-- Service Schema -->
@@ -52,7 +54,7 @@
     "description": "Complete bathroom remodeling services in Fresno and Clovis, CA including shower replacement, tile installation, vanity updates, plumbing, electrical, and full gut remodels.",
     "provider": {
       "@type": "HomeAndConstructionBusiness",
-      "@id": "https://www.andreyhandyman.com/#business",
+      "@id": "https://andreyhandyman.com/#business",
       "name": "Andrey's Construction & Remodeling Inc.",
       "telephone": "+15593604128",
       "address": {
@@ -189,7 +191,7 @@
       width="1140" height="420"
     >
 
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; margin-bottom:64px;">
+    <div class="intro-grid">
       <div>
         <span class="eyebrow">Why Andrey's</span>
         <h2>The Bathroom Remodel Fresno Homeowners Trust</h2>
@@ -280,6 +282,7 @@
       <h2>Bathroom Remodel Costs in Fresno</h2>
       <p>Every project is unique, but here's a general guide to help you plan. All estimates are free and itemized — no vague ranges, no surprises.</p>
     </div>
+    <div class="cost-table-wrap">
     <table class="cost-table">
       <thead>
         <tr>
@@ -316,6 +319,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
     <p style="font-size:0.85rem; color:var(--charcoal-lt); text-align:center; margin-top:20px;">Ranges reflect Fresno-area labor and material costs as of 2025. Actual quotes depend on project scope and material selections.</p>
   </div>
 </section>
