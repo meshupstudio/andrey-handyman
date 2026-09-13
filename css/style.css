@@ -138,7 +138,7 @@ p { color: var(--charcoal-md); line-height: 1.75; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 96px;
+  height: 140px;
 }
 .nav-logo {
   display: flex;
@@ -147,7 +147,7 @@ p { color: var(--charcoal-md); line-height: 1.75; }
   text-decoration: none;
 }
 .nav-logo img {
-  height: 88px;
+  height: 128px;
   width: auto;
   display: block;
   object-fit: contain;
