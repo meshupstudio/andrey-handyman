@@ -94,7 +94,7 @@
   <div class="container">
     <div class="nav-inner">
       <a href="/" class="nav-logo" aria-label="Andrey's Construction home">
-        <img src="/images/logo/logo-light.png" alt="Andrey's Construction &amp; Remodeling Inc." width="256" height="128">
+        <img src="/images/logo/logo-light.webp" alt="Andrey's Construction &amp; Remodeling Inc." width="256" height="128">
       </a>
       <ul class="nav-links" role="list">
         <li><a href="/">Home</a></li>
@@ -127,7 +127,16 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" aria-label="Homepage hero">
-  <div class="hero-bg" role="img" aria-label="Completed bathroom remodel in Fresno CA"></div>
+  <img
+    class="hero-bg"
+    src="images/homepage-hero-double-vanity.webp"
+    srcset="images/homepage-hero-double-vanity-800.webp 800w, images/homepage-hero-double-vanity.webp 1086w"
+    sizes="100vw"
+    alt="Completed double-vanity bathroom remodel with granite-look countertop in Clovis, CA"
+    fetchpriority="high"
+    loading="eager"
+    width="1086" height="610"
+  >
   <div class="hero-overlay"></div>
   <div class="container">
     <div class="hero-content">
@@ -188,6 +197,8 @@
     <!-- ⚑ PLACEHOLDER — replace with real photo of Andrey working on a project -->
     <img
       src="images/andrey-boginski.webp"
+      srcset="images/andrey-boginski-800.webp 800w, images/andrey-boginski.webp 1200w"
+      sizes="(max-width: 1024px) 100vw, 50vw"
       alt="Andrey Boginski working on a bathroom remodel in Fresno CA"
       loading="lazy"
       width="600" height="600"
