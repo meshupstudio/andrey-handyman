@@ -1,18 +1,18 @@
 [[redirects]]
   from = "/bathroom"
-  to = "/bathroom-remodel-fresno"
+  to = "/bathroom-remodel-fresno.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bathroom-remodels"
-  to = "/bathroom-remodel-fresno"
+  to = "/bathroom-remodel-fresno.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/ourwork"
-  to = "/our-work"
+  to = "/our-work.html"
   status = 301
   force = true
 
@@ -42,13 +42,28 @@
 
 [[redirects]]
   from = "/andrey-handyman"
-  to = "/about"
+  to = "/about.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/revamp-your-home-fresno-bathroom-remodel-ideas"
-  to = "/blog/bathroom-remodel-cost-fresno"
+  to = "/blog/bathroom-remodel-cost-fresno.html"
+  status = 301
+  force = true
+
+# Extensionless duplicates that Google has indexed alongside their .html
+# canonical - force a single redirect to the canonical URL instead of
+# relying on Netlify's default clean-URL rewrite (which serves both as 200).
+[[redirects]]
+  from = "/bathroom-remodel-clovis"
+  to = "/bathroom-remodel-clovis.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/clovis-bathroom-remodel-double-vanity-patterned-shower"
+  to = "/clovis-bathroom-remodel-double-vanity-patterned-shower.html"
   status = 301
   force = true
 
