@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const ctaLink = e.target.closest('a[href="/contact.html"].btn, a[href="/contact.html"].area-link');
+    const ctaLink = e.target.closest('a[href="/contact.html"].btn, a[href="/contact.html"].area-link, a[href="/contact"].btn, a[href="/contact"].area-link');
     if (ctaLink) {
       gtag('event', 'cta_click', { link_text: ctaLink.textContent.trim() });
     }
