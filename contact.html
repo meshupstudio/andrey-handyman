@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNWTT6NS5E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LNWTT6NS5E');
+  </script>
   <title>Contact | Free Bathroom Remodel Estimate — Andrey's Construction Fresno CA</title>
   <meta name="description" content="Get a free on-site estimate for your bathroom remodel in Fresno or Clovis. Call (559) 360-4128 or fill out our contact form. We respond within 24 hours.">
   <meta name="robots" content="index, follow">
@@ -45,6 +53,7 @@
     .form-success h3 { color:var(--tile); margin-bottom:16px; }
     .form-success p { color:var(--charcoal-md); }
     .form-success .success-icon { font-size:3rem; margin-bottom:16px; }
+    .form-error { display:none; margin-top:16px; padding:14px 16px; background:#fdecec; border:1px solid #e8b4b4; border-radius:var(--radius-sm); color:#9a2f2f; font-size:0.9rem; }
   </style>
 </head>
 <body>
@@ -209,6 +218,7 @@
               <textarea id="message" name="message" placeholder="Describe what you're looking to do — size of the bathroom, what you'd like to change, any timeline requirements..."></textarea>
             </div>
             <button type="submit" class="btn btn-primary form-submit">Request Free Estimate →</button>
+            <p class="form-error js-form-error">Something went wrong submitting your request. Please try again, or call us directly at <a href="tel:5593604128" style="color:#9a2f2f;font-weight:600;">(559) 360-4128</a>.</p>
           </form>
 
           <div class="form-success js-form-success">
